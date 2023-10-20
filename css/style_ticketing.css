@@ -719,3 +719,36 @@ font-weight:800!important;
 	display: table-header-group;
 }
 }
+
+
+
+@media screen and (max-width: 421px){
+	.reducefont_sm{
+	font-size:0.9em;
+	
+	
+}
+}
+
+
+
+@media screen and (max-width: 480px){
+	.tablefontsize{
+	font-size:0.7em!important;}
+	.tablefontsize2{
+	font-size:0.8em!important;
+
+	
+}
+}
+
+@media screen and (max-width: 575px){
+	.tablefontsize{
+	font-size:0.8em!important;}
+	.tablefontsize2{
+	font-size:0.9em!important;
+
+	
+}
+
+}
