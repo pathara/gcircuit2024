@@ -53,7 +53,7 @@ font-family: 'Montserrat', sans-serif;
 	/* RADIO SELECT BEAR BOY */
 
 	.control {
-		display: block;
+	
 		position: relative;
 		padding-left: 28px;
 		margin-bottom: 0px;
@@ -62,7 +62,7 @@ font-family: 'Montserrat', sans-serif;
 		font-size: 1em;
 		line-height:1.6em;
 		font-weight: 300;
-		text-align: center;
+		text-align:left!important;
 		width:auto;
 		max-width:180px;
 		margin:0px auto;
@@ -74,26 +74,26 @@ font-family: 'Montserrat', sans-serif;
 	}
 	.control_indicator {
 		position:absolute;
-		top: 4px;
-		left: 24px;
+		top: 5px;
+		left: 1em;
 		height: 18px;
 		width: 18px;
-		background: #d90e90;
-		border: 0px solid #ffffff;
+		background:#C0C0C0;
+		border: 0px solid #999999;
 		border-radius: 50%;
 	}
 	.control:hover input~.control_indicator, .control input:focus~.control_indicator {
-		background: #b70276;
+		background:red;
 	}
 	.control input:checked~.control_indicator {
-		background: #d90e90;
+		background:background: rgb(225,0,25); ;
 	}
 	.control:hover input:not([disabled]):checked~.control_indicator, .control input:checked:focus~.control_indicator {
-		background: #d90e90;
+		background:background: rgb(225,0,25);;
 	}
 	.control input:disabled~.control_indicator {
-		background: #e6e6e6;
-		opacity: 1;
+		background:#CCCCCC;
+		opacity: 0.5;
 		pointer-events: none;
 	}
 	.control_indicator:after {
@@ -114,7 +114,7 @@ font-family: 'Montserrat', sans-serif;
 		height: 10px;
 		width: 10px;
 		border-radius: 50%;
-		background: #ffffff;
+		background:red;
 		transition: background 250ms;
 	}
 	.control-radio input:disabled~.control_indicator:after {
