@@ -2791,7 +2791,9 @@ a.icon[class*='youtube']:hover {
 
 .table-custom th {
 	padding: 1em 1em;
-	font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Microsoft YaHei", STXihei, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	/*  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Microsoft YaHei", STXihei, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;*/
+	font-family: 'IBM Plex Sans Thai', sans-serif;
+
 	font-size:1em;
 	font-weight: 700;
 	letter-spacing: .05em;
