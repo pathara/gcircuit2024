@@ -73,14 +73,10 @@
 					<table class="table-custom table-custom-secondary">
 						<thead>
 							<tr>
-								<th class="pl-2 pl-sm-3 pl-lg-3 pl-xl-5 text-left tablefontsize2 w-auto">ITEM<br>
-								商品</th>
-								<th class="text-left tablefontsize2 w-auto">NO.<br>
-								表號</th>
-								<th class="text-left tablefontsize2 w-auto">DATE<br>
-								日期</th>
-								<th class="text-left tablefontsize2 w-auto">PRICE<br>
-								数量</th>
+								<th class="pl-2 pl-sm-3 pl-lg-3 pl-xl-5 text-left tablefontsize2 w-auto p-0"><span class="del">ITEM<br>商品</span></th>
+								<th class="text-left tablefontsize2 w-auto p-0"><span class="del">NO.<br>表號</span></th>
+								<th class="text-left tablefontsize2 w-auto p-0"><span class="del">DATE<br>日期</span></th>
+								<th class="text-left tablefontsize2 w-auto p-0"><span class="del">PRICE<br>價格</span></th>
 							</tr>
 						</thead>
 						<tbody>
@@ -483,7 +479,7 @@
     
     <label class="control control-radio mb-4">
        	
-          <img class="ml-4 text-left" alt="" src="ticketing_images/creditcard.png" class="img-fluid" width="200"><input class="text-left" type="radio" name="payment_method" checked="checked" value="creditcard" />
+          <img class="ml-4 text-left" alt="" src="ticketing_images/creditcard.png" class="img-fluid" width="200"><input class="text-left" type="radio" name="payment_method" value="creditcard" />
         <div class="control_indicator"></div>
     </label>
     <br>
@@ -566,9 +562,12 @@
             </div>
 
 </form>
-			</div><br>
+
+			<div class="d-none d-sm-block" style="height:1em; margin-bottom:5em;">
+				&nbsp;
+			</div></div><br>
 			<br>
-			<div class="d-md-none" style="height:5em;">
+			<div class="d-block d-sm-none" style="height:5em;">
 				&nbsp;
 			</div>
 		</section><!-- 

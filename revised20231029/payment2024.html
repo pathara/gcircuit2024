@@ -63,14 +63,10 @@
 						<!-- HEAD COLUMNS -->
 						<thead>
 							<tr>
-								<th class="tablefontsize pr-0 pl-sm-1 pl-md-4 pl-lg-4 pl-xl-4 pl-xxl-4 text-left col-xs-6 col-sm-6">ITEM<br>
-								商品</th>
-								<th class="tablefontsize p-0 text-center col-xs-2">PRICE<br>								
-價格</th>
-								<th class="tablefontsize p-0 text-center col-xs-2">QUANTITY<br>
-								数量</th>
-								<th class="tablefontsize p-0 text-center col-xs-2">TOTAL<br>
-								总计</th>
+								<th class="tablefontsize pr-0 pl-sm-1 pl-md-4 pl-lg-4 pl-xl-4 pl-xxl-4 text-left col-xs-6 col-sm-6"><span class="del">ITEM<br>商品</span></th>
+								<th class="tablefontsize p-0 text-center col-xs-2"><span class="del">PRICE<br>價格</span></th>
+								<th class="tablefontsize p-0 text-center col-xs-2"><span class="del">QUANTITY<br>数量</span></th>
+								<th class="tablefontsize p-0 text-center col-xs-2"><span class="del">TOTAL<br>总计</span></th>
 							</tr>
 						</thead><!-- START BODY OF VIEWCART -->
 						<tbody>
@@ -512,7 +508,7 @@
     
     <label class="control control-radio mb-4">
        	
-          <img class="ml-4 text-left" alt="" src="ticketing_images/creditcard.png" class="img-fluid" width="200"><input class="text-left" type="radio" name="payment_method" checked="checked" value="creditcard" />
+          <img class="ml-4 text-left" alt="" src="ticketing_images/creditcard.png" class="img-fluid" width="200"><input class="text-left" type="radio" name="payment_method" value="creditcard" />
         <div class="control_indicator"></div>
     </label>
     <br>
@@ -595,9 +591,11 @@
             </div>
 
 </form>
-			</div><br>
+			<div class="d-none d-sm-block" style="height:1em; margin-bottom:5em;">
+				&nbsp;
+			</div></div><br>
 			<br>
-			<div class="d-md-none" style="height:5em;">
+			<div class="d-block d-sm-none" style="height:5em;">
 				&nbsp;
 			</div>
 		</section>
