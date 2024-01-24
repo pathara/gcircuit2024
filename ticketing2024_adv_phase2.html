@@ -3,7 +3,7 @@
 <head>
 	<title>GCIRCUIT SK2024 SUPER EARLY BIRD TICKETS</title>
 	<meta charset="utf-8">
-	<meta content="width=385, initial-scale=1.0" name="viewport">
+	<meta content="width=480, initial-scale=1.0" name="viewport">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<link href="images/gicon.ico" rel="icon" type="image/x-icon">
 	<link href="https://fonts.googleapis.com" rel="preconnect">
@@ -19,19 +19,26 @@
 	</script>
 	<script src="js/quantity_script.js">
 	</script><!-- Img change -->
+	<script>
+     $(document).ready(function() {
+    $(window).scroll(function() {
+        var distanceFromTop = $(document).scrollTop();
+        if (distanceFromTop >= $('#header').height())
+        {
+            $('#sticky').fadeIn(0).addClass('fixedtop');
+        }
+        else
+        {
+            $('#sticky').removeClass('fixedtop');
+        }
+    });
+});    </script>
 
 	<style>
 	       .ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}
 	       }
 	</style>
-	<style>
-  .sticky{
-  /*Main propeties*/
-  position:sticky;
-  top: 2px;
-  
-  }
-</style>
+	
 </head>
 <body style="background-color:black;">
 	<div class="ie-panel">
@@ -45,7 +52,7 @@
 			<p>Loading...</p>
 		</div>
 	</div>
-	<div class="page" style="background-image:url('2024_img/bg-hometiketing2.png');background-position:center top; background-repeat:no-repeat;">
+	<div class="page"  style="background-image:url('2024_img/bg-hometiketing2.png');background-position:center top; background-repeat:no-repeat;">
 		<!-- Section Header Default-->
 		<!-- Breadcrumbs-->
 		<section class="context-dark" style="padding:2em; text-align:center;">
@@ -64,17 +71,21 @@
 					<div class="tabs-custom tabs-horizontal tabs-corporate" id="tabs-1">
             <!--Nav tabs-->
           
-    		<div class="sticky" >
-            <ul class="sticky nav nav-tabs">
-              <li class="nav-item" role="presentation"><a class="nav-link nav-link nav-link-secondary-darker" href="#tabs-1-1" data-toggle="tab" data-triangle=".nav-link-overlay"><span class="nav-link-overlay"></span><span class="nav-link-title"><span class="en">Combo Tickets</span><span class="cn">套票</span></span></a></li>
-              <li class="nav-item" role="presentation"><a class="nav-link nav-link-purple-heart" href="#tabs-1-2" data-toggle="tab" data-triangle=".nav-link-overlay"><span class="nav-link-overlay"></span><span class="nav-link-title" ><span class="en">Single Tickets</span><span class="cn">单票</span></span></a></li>
+    		
+    		 <div id="header" style=" height:6em; display:none; padding:0px!important;"></div>
+    		 <div id="sticky" >
+           <ul class="nav nav-tabs"  style="margin:0 auto!important; padding:0px!important;">
+              <li class="nav-item" style=" padding:0px!important;margin-left:0px;" role="presentation"><a class="nav-link nav-link nav-link-secondary-darker" href="#tabs-1-1" data-toggle="tab" data-triangle=".nav-link-overlay"><span class="nav-link-overlay"></span><span class="nav-link-title"><span class="en">Combo Tickets</span><!-- <span class="cn">套票</span> --></span></a></li>
+              <li class="nav-item" style=" padding:0px!important;margin-right:0px;" role="presentation"><a class="nav-link nav-link-purple-heart" href="#tabs-1-2" data-toggle="tab" data-triangle=".nav-link-overlay"><span class="nav-link-overlay"></span><span class="nav-link-title" ><span class="en">Single Tickets</span><!-- <span class="cn">单票</span> --></span></a></li>
                  </ul>
-             </div>
+      </div>
+    		
+        
             <!--Tab panes-->
-            <div class="tab-content"><!-- COMBO -->
+            <div id="section" class="tab-content"><!-- COMBO -->
               <div class="tab-pane fade" id="tabs-1-1" style="background-color:transparent;">
-                <div class="container">
-				<div class="table-custom-responsive">
+                <div class="container" style="padding:1em 0px 2em 0em!important;">
+				<div class="table-custom-responsive" >
 					<table class="table-custom table-custom-primary">
 						<thead>
 							<tr class="col-12 d-none d-xs-none d-sm-none d-md-none d-lg-table-row">
@@ -134,7 +145,7 @@
 										<p class="remark2 text-center d-none d-sm-block col-sm-12 text-sm-center d-md-none moveup2"><span class="asterisk">*</span>VIP ticket holders are entitled to VIP express entry, access to VIP area,<br>
 										VIP bar/service/restrooms and a VIP gift.<br>
 										<span class="asterisk">*</span> Do note that VIP privileges will not be available at the Pool Party.</p>
-									</div>
+									</div> <br>
 								</td>
 							</tr><!-- STD NIGHT STD NIGHT STD NIGHT STD NIGHT STD NIGHT-->
 							<tr>
@@ -174,69 +185,23 @@
 												<input class="minus" type="button" value="-"><input class="input-text qty text" max="" min="0" name="quantity" pattern="" size="4" step="1" title="Qty" type="number" value="0"><input class="plus" type="button" value="+">
 											</div>
 										</div>
-									</div>
+									</div><br>
 								</td>
-							</tr><!--end NIGHTS PARTIE --><!--start pool PARTIE -->
-							<!--end Pool PARTIE -->
-						</tbody><!--SUM -->
-						<tfoot>
-							<tr>
-								<td>&nbsp;</td>
-								<td class="text-center">
-									<h5>&nbsp;Total (THB)</h5>
-								</td>
-								<td class="text-center">
-									<h5>&nbsp;99,000</h5>
-								</td>
-								<td>&nbsp;</td>
 							</tr>
-						</tfoot>
+						</tbody>
+						
 					</table>
 				</div>
 			</div>
               </div>
               
               
+              <!-- START SINGLE TICKET -->
               
               
-              
-              <div class="tab-pane fade" id="tabs-1-2"  style="background-color:transparent;">
-                
-                </div>
-             
-      
-					
-              </div>
-              
-              
-            
-          </div>
-
-				
-			<br>
-			<br></div></div>
-
-			
-			<br>
-			<br>
-			<div class="d-md-none" style="height:5em;">
-				&nbsp;
-			</div>
-		</section>
-	<!-- END COMBO -->	
-	
-
-
-
-	
-		
-		<br>
-		<br>
-		
-	<!-- START SINGGLE -->
-		<section class="section bg-image text-center" style=" padding-top:2em;">
-			<div class="container">
-				<div class="table-custom-responsive">
+              <div class="tab-pane fade" id="tabs-1-2" style="background-color:transparent;">
+                <div class="container" style="padding:1em 0px 2em 0em!important;">
+				<div class="table-custom-responsive" >
 					<table class="table-custom table-custom-primary">
 						<thead>
 							<tr class="col-12 d-none d-xs-none d-sm-none d-md-none d-lg-table-row">
@@ -247,11 +212,11 @@
 							</tr>
 						</thead>
 						<tbody>
-							<!--start NIGHTS PARTIE -->
+							<!--start 12-12-12-12-12 -->
 							<tr>
-								<td colspan="4" style="height: 58px;background-image: linear-gradient(to right top, #ffe3f0, #ffdee2, #ffddc2, #ffe89d, #fffa87);">
-									<h5 class="text-center">NIGHT PARTIES ONLY<br>
-									<span class="heading-7 text-center" style="color: #199dfc!important;">4 NIGHT PARTIES</span></h5>
+								<td colspan="4" style="height: 58px;background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(221,136,224,1) 0%, rgba(255,203,213,1) 50%, rgba(199,82,231,1) 100%);">
+									<h5 class="text-center">12 April 2024 : Anime Planet<br>
+									<span class="heading-7 text-center" style="color: #199dfc!important;">(opening party)</span></h5>
 								</td>
 							</tr><!-- VIP NIGHT VIP NIGHT VIP NIGHT VIP NIGHT -->
 							<tr>
@@ -259,15 +224,15 @@
 									<div class="row">
 										<div class="col-xl-7 col-lg-7 col-md-8">
 											<div class="row">
-												<div class="col-4 offset-4 col-xs-4 offset-xs-4 col-sm-3 offset-sm-1 col-md-3 offset-md-0 pt-md-2 col-lg-3 col-xl-2"><img alt="" class=" img-responsive" src="2024_img/vip_night_s.png" style=" max-width:100%;"></div>
+												<div class="col-4 offset-4 col-xs-4 offset-xs-4 col-sm-3 offset-sm-1 col-md-3 offset-md-0 pt-md-2 col-lg-3 col-xl-2"><img alt="" class=" img-responsive" src="2024_img/vip12s.png" style=" max-width:100%;"></div>
 												<div class="col-12 col-xs-12 col-sm-8 col-md-9 p-md-0 mt-md-0 text-md-left text-center mt-2">
-													<strong class=" ml-md-3" style="font-size:1.2em;"><span class="gold">VIP</span> NIGHT PARTIES</strong>
+													<strong class=" ml-md-3" style="font-size:1.2em;"><span class="gold">VIP</span> Anime Planet</strong>
 													<div class="col-lg-12 d-none d-lg-block mb-1 ml-lg-1" style="margin-left:-0.9em;">
 														<em>Buy now to save 7,700 THB</em>
 													</div>
 													<div class="d-inline d-lg-none p-0">
 														<div class="col-12 col-xs-12 col-md-8 offset-md-0 text-md-left d-inline-block text-center">
-															12, 13, 14, 15 APRIL 2024
+															12 APRIL 2024
 														</div>
 														<div class="col-12 col-xs-12 col-md-4 d-inline-block">
 															<strong>10,300 THB</strong>
@@ -279,7 +244,7 @@
 											</div>
 										</div>
 										<div class="col-xl-2 col-lg-2 text-center d-none d-lg-block">
-											12, 13, 14, 15<br>
+											12
 											APRIL 2024
 										</div>
 										<div class="col-xl-1 col-lg-1 text-center d-none d-lg-block">
@@ -296,17 +261,203 @@
 										<p class="remark2 text-center d-none d-sm-block col-sm-12 text-sm-center d-md-none moveup2"><span class="asterisk">*</span>VIP ticket holders are entitled to VIP express entry, access to VIP area,<br>
 										VIP bar/service/restrooms and a VIP gift.<br>
 										<span class="asterisk">*</span> Do note that VIP privileges will not be available at the Pool Party.</p>
-									</div>
+									</div><br>
 								</td>
-							</tr><!-- STD NIGHT STD NIGHT STD NIGHT STD NIGHT STD NIGHT-->
+							</tr>
 							<tr>
 								<td colspan="4">
 									<div class="row">
 										<div class="col-xl-7 col-lg-7 col-md-8">
 											<div class="row">
-												<div class="col-4 offset-4 col-xs-4 offset-xs-4 col-sm-3 offset-sm-1 col-md-3 offset-md-0 pt-md-2 col-lg-3 col-xl-2"><img alt="" class=" img-responsive" src="2024_img/std_night_s.png" style=" max-width:100%;"></div>
+												<div class="col-4 offset-4 col-xs-4 offset-xs-4 col-sm-3 offset-sm-1 col-md-3 offset-md-0 pt-md-2 col-lg-3 col-xl-2"><img alt="" class=" img-responsive" src="2024_img/std12s.png" style=" max-width:100%;"></div>
 												<div class="col-12 col-xs-12 col-sm-8 col-md-9 p-md-0 mt-md-0 text-md-left text-center mt-2">
-													<strong class="pl-md-3" style="font-size:1.2em;"><span style="font-weight:800;">STANDARD</span> NIGHT PARTIES</strong>
+													<strong class="pl-md-3" style="font-size:1.2em;"><span style="font-weight:800;">STANDARD</span> Anime Planet</strong>
+													<div class="col-lg-12 d-none d-lg-block mb-1 ml-lg-1" style="margin-left:-0.9em;">
+														<em>Buy now to save 5,700 THB</em>
+													</div>
+													<div class="d-inline d-lg-none p-0">
+														<div class="col-12 col-xs-12 col-md-8 offset-md-0 text-md-left d-inline-block text-center">
+															12 APRIL 2024
+														</div>
+														<div class="col-12 col-xs-12 col-md-4 d-inline-block">
+															<strong>7,900 THB</strong>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-2 col-lg-2 text-center d-none d-lg-block">
+											12
+											APRIL 2024
+										</div>
+										<div class="col-xl-1 col-lg-1 text-center d-none d-lg-block">
+											7,900
+										</div>
+										<div class="col-xl-2 col-lg-2 col-md-4 offset-md-0 col-sm-6 offset-sm-5 text-center mt-2 mt-xs-3 mt-sm-3 mt-md-0 mt-lg-1 moveup">
+											<div class="d-inline d-lg-none d-block mb-1">
+												<em>Buy now to save 5,700 THB</em>
+											</div>
+											<div class="quantity buttons_added" style="margin:0 auto;">
+												<input class="minus" type="button" value="-"><input class="input-text qty text" max="" min="0" name="quantity" pattern="" size="4" step="1" title="Qty" type="number" value="0"><input class="plus" type="button" value="+">
+											</div>
+										</div>
+									</div><br>
+								</td>
+							</tr>
+							
+							<!--start 133-13-13-13-13 -->
+							<tr>
+								<td colspan="4" style="height: 58px;background-image: linear-gradient(to right top, #ffe3f0, #ffdee2, #ffddc2, #ffe89d, #fffa87);">
+									<h5 class="text-center">13 April 2024 : Ever After<br>
+									<span class="heading-7 text-center" style="color: #199dfc!important;">(Main Party vol.1 )</span></h5>
+								</td>
+							</tr><!-- VIP NIGHT VIP NIGHT VIP NIGHT VIP NIGHT -->
+							<tr>
+								<td colspan="4">
+									<div class="row">
+										<div class="col-xl-7 col-lg-7 col-md-8">
+											<div class="row">
+												<div class="col-4 offset-4 col-xs-4 offset-xs-4 col-sm-3 offset-sm-1 col-md-3 offset-md-0 pt-md-2 col-lg-3 col-xl-2"><img alt="" class=" img-responsive" src="2024_img/vip13s.png" style=" max-width:100%;"></div>
+												<div class="col-12 col-xs-12 col-sm-8 col-md-9 p-md-0 mt-md-0 text-md-left text-center mt-2">
+													<strong class=" ml-md-3" style="font-size:1.2em;"><span class="gold">VIP</span> Ever After</strong>
+													<div class="col-lg-12 d-none d-lg-block mb-1 ml-lg-1" style="margin-left:-0.9em;">
+														<em>Buy now to save 7,700 THB</em>
+													</div>
+													<div class="d-inline d-lg-none p-0">
+														<div class="col-12 col-xs-12 col-md-8 offset-md-0 text-md-left d-inline-block text-center">
+															13 APRIL 2024
+														</div>
+														<div class="col-12 col-xs-12 col-md-4 d-inline-block">
+															<strong>10,300 THB</strong>
+														</div>
+													</div>
+													<p class="remark2 text-center d-sm-none d-md-block text-md-left ml-md-3"><span class="asterisk">*</span> VIP ticket holders are entitled to VIP express entry, access to VIP area, VIP bar/service/restrooms and a VIP gift.<br>
+													<span class="asterisk">*</span> Do note that VIP privileges will not be available at the Pool Party.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-2 col-lg-2 text-center d-none d-lg-block">
+											13
+											APRIL 2024
+										</div>
+										<div class="col-xl-1 col-lg-1 text-center d-none d-lg-block">
+											10,300
+										</div>
+										<div class="col-xl-2 col-lg-2 col-md-4 offset-md-0 col-sm-6 offset-sm-5 text-center mt-2 mt-xs-3 mt-sm-3 mt-md-0 mt-lg-1 moveup">
+											<div class="d-inline d-lg-none d-block mb-1">
+												<em>Buy now to save 7,700 THB</em>
+											</div>
+											<div class="quantity buttons_added" style="margin:0 auto;">
+												<input class="minus" type="button" value="-"><input class="input-text qty text" max="" min="0" name="quantity" pattern="" size="4" step="1" title="Qty" type="number" value="0"><input class="plus" type="button" value="+">
+											</div>
+										</div>
+										<p class="remark2 text-center d-none d-sm-block col-sm-12 text-sm-center d-md-none moveup2"><span class="asterisk">*</span>VIP ticket holders are entitled to VIP express entry, access to VIP area,<br>
+										VIP bar/service/restrooms and a VIP gift.<br>
+										<span class="asterisk">*</span> Do note that VIP privileges will not be available at the Pool Party.</p>
+									</div><br>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4">
+									<div class="row">
+										<div class="col-xl-7 col-lg-7 col-md-8">
+											<div class="row">
+												<div class="col-4 offset-4 col-xs-4 offset-xs-4 col-sm-3 offset-sm-1 col-md-3 offset-md-0 pt-md-2 col-lg-3 col-xl-2"><img alt="" class=" img-responsive" src="2024_img/std13s.png" style=" max-width:100%;"></div>
+												<div class="col-12 col-xs-12 col-sm-8 col-md-9 p-md-0 mt-md-0 text-md-left text-center mt-2">
+													<strong class="pl-md-3" style="font-size:1.2em;"><span style="font-weight:800;">STANDARD</span> Ever After</strong>
+													<div class="col-lg-12 d-none d-lg-block mb-1 ml-lg-1" style="margin-left:-0.9em;">
+														<em>Buy now to save 5,700 THB</em>
+													</div>
+													<div class="d-inline d-lg-none p-0">
+														<div class="col-12 col-xs-12 col-md-8 offset-md-0 text-md-left d-inline-block text-center">
+															13 APRIL 2024
+														</div>
+														<div class="col-12 col-xs-12 col-md-4 d-inline-block">
+															<strong>7,900 THB</strong>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-2 col-lg-2 text-center d-none d-lg-block">
+											13
+											APRIL 2024
+										</div>
+										<div class="col-xl-1 col-lg-1 text-center d-none d-lg-block">
+											7,900
+										</div>
+										<div class="col-xl-2 col-lg-2 col-md-4 offset-md-0 col-sm-6 offset-sm-5 text-center mt-2 mt-xs-3 mt-sm-3 mt-md-0 mt-lg-1 moveup">
+											<div class="d-inline d-lg-none d-block mb-1">
+												<em>Buy now to save 5,700 THB</em>
+											</div>
+											<div class="quantity buttons_added" style="margin:0 auto;">
+												<input class="minus" type="button" value="-"><input class="input-text qty text" max="" min="0" name="quantity" pattern="" size="4" step="1" title="Qty" type="number" value="0"><input class="plus" type="button" value="+">
+											</div>
+										</div>
+									</div><br>
+								</td>
+							</tr>
+							
+							<!--start 14-14-14-14-14 -->
+							<tr>
+								<td colspan="4" style="height: 58px;background: linear-gradient(90deg, rgba(232,196,93,1) 0%, rgba(233,233,233,1) 50%, rgba(230,193,90,1) 100%);">
+									<h5 class="text-center">14 April 2024 : House of Dragon <br>
+									<span class="heading-7 text-center" style="color: #199dfc!important;">(Main Party vol.2)</span></h5>
+								</td>
+							</tr><!-- VIP NIGHT VIP NIGHT VIP NIGHT VIP NIGHT -->
+							<tr>
+								<td colspan="4">
+									<div class="row">
+										<div class="col-xl-7 col-lg-7 col-md-8">
+											<div class="row">
+												<div class="col-4 offset-4 col-xs-4 offset-xs-4 col-sm-3 offset-sm-1 col-md-3 offset-md-0 pt-md-2 col-lg-3 col-xl-2"><img alt="" class=" img-responsive" src="2024_img/vip14s.png" style=" max-width:100%;"></div>
+												<div class="col-12 col-xs-12 col-sm-8 col-md-9 p-md-0 mt-md-0 text-md-left text-center mt-2">
+													<strong class=" ml-md-3" style="font-size:1.2em;"><span class="gold">VIP</span> House of Dragon</strong>
+													<div class="col-lg-12 d-none d-lg-block mb-1 ml-lg-1" style="margin-left:-0.9em;">
+														<em>Buy now to save 7,700 THB</em>
+													</div>
+													<div class="d-inline d-lg-none p-0">
+														<div class="col-12 col-xs-12 col-md-8 offset-md-0 text-md-left d-inline-block text-center">
+															14 APRIL 2024
+														</div>
+														<div class="col-12 col-xs-12 col-md-4 d-inline-block">
+															<strong>10,300 THB</strong>
+														</div>
+													</div>
+													<p class="remark2 text-center d-sm-none d-md-block text-md-left ml-md-3"><span class="asterisk">*</span> VIP ticket holders are entitled to VIP express entry, access to VIP area, VIP bar/service/restrooms and a VIP gift.<br>
+													<span class="asterisk">*</span> Do note that VIP privileges will not be available at the Pool Party.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-2 col-lg-2 text-center d-none d-lg-block">
+											14
+											APRIL 2024
+										</div>
+										<div class="col-xl-1 col-lg-1 text-center d-none d-lg-block">
+											10,300
+										</div>
+										<div class="col-xl-2 col-lg-2 col-md-4 offset-md-0 col-sm-6 offset-sm-5 text-center mt-2 mt-xs-3 mt-sm-3 mt-md-0 mt-lg-1 moveup">
+											<div class="d-inline d-lg-none d-block mb-1">
+												<em>Buy now to save 7,700 THB</em>
+											</div>
+											<div class="quantity buttons_added" style="margin:0 auto;">
+												<input class="minus" type="button" value="-"><input class="input-text qty text" max="" min="0" name="quantity" pattern="" size="4" step="1" title="Qty" type="number" value="0"><input class="plus" type="button" value="+">
+											</div>
+										</div>
+										<p class="remark2 text-center d-none d-sm-block col-sm-12 text-sm-center d-md-none moveup2"><span class="asterisk">*</span>VIP ticket holders are entitled to VIP express entry, access to VIP area,<br>
+										VIP bar/service/restrooms and a VIP gift.<br>
+										<span class="asterisk">*</span> Do note that VIP privileges will not be available at the Pool Party.</p>
+									</div><br>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4">
+									<div class="row">
+										<div class="col-xl-7 col-lg-7 col-md-8">
+											<div class="row">
+												<div class="col-4 offset-4 col-xs-4 offset-xs-4 col-sm-3 offset-sm-1 col-md-3 offset-md-0 pt-md-2 col-lg-3 col-xl-2"><img alt="" class=" img-responsive" src="2024_img/std14s.png" style=" max-width:100%;"></div>
+												<div class="col-12 col-xs-12 col-sm-8 col-md-9 p-md-0 mt-md-0 text-md-left text-center mt-2">
+													<strong class="pl-md-3" style="font-size:1.2em;"><span style="font-weight:800;">STANDARD</span> House of Dragon</strong>
 													<div class="col-lg-12 d-none d-lg-block mb-1 ml-lg-1" style="margin-left:-0.9em;">
 														<em>Buy now to save 5,700 THB</em>
 													</div>
@@ -322,7 +473,7 @@
 											</div>
 										</div>
 										<div class="col-xl-2 col-lg-2 text-center d-none d-lg-block">
-											12, 13, 14, 15<br>
+											14<br>
 											APRIL 2024
 										</div>
 										<div class="col-xl-1 col-lg-1 text-center d-none d-lg-block">
@@ -336,9 +487,106 @@
 												<input class="minus" type="button" value="-"><input class="input-text qty text" max="" min="0" name="quantity" pattern="" size="4" step="1" title="Qty" type="number" value="0"><input class="plus" type="button" value="+">
 											</div>
 										</div>
-									</div>
+									</div><br>
 								</td>
-							</tr><!--end NIGHTS PARTIE --><!--start pool PARTIE -->
+							</tr>
+							
+							<!--start 15-15-15-15 -->
+							<tr>
+								<td colspan="4" style="height: 58px;background-image: linear-gradient(to right top, #ffe3f0, #ffdee2, #ffddc2, #ffe89d, #fffa87);">
+									<h5 class="text-center">15 April 2024 : Medieval Gods <br>
+									<span class="heading-7 text-center" style="color: #199dfc!important;">(Closing Party )</span></h5>
+								</td>
+							</tr><!-- VIP NIGHT VIP NIGHT VIP NIGHT VIP NIGHT -->
+							<tr>
+								<td colspan="4">
+									<div class="row">
+										<div class="col-xl-7 col-lg-7 col-md-8">
+											<div class="row">
+												<div class="col-4 offset-4 col-xs-4 offset-xs-4 col-sm-3 offset-sm-1 col-md-3 offset-md-0 pt-md-2 col-lg-3 col-xl-2"><img alt="" class=" img-responsive" src="2024_img/vip15s.png" style=" max-width:100%;"></div>
+												<div class="col-12 col-xs-12 col-sm-8 col-md-9 p-md-0 mt-md-0 text-md-left text-center mt-2">
+													<strong class=" ml-md-3" style="font-size:1.2em;"><span class="gold">VIP</span> Medieval Gods</strong>
+													<div class="col-lg-12 d-none d-lg-block mb-1 ml-lg-1" style="margin-left:-0.9em;">
+														<em>Buy now to save 7,700 THB</em>
+													</div>
+													<div class="d-inline d-lg-none p-0">
+														<div class="col-12 col-xs-12 col-md-8 offset-md-0 text-md-left d-inline-block text-center">
+															15 APRIL 2024
+														</div>
+														<div class="col-12 col-xs-12 col-md-4 d-inline-block">
+															<strong>10,300 THB</strong>
+														</div>
+													</div>
+													<p class="remark2 text-center d-sm-none d-md-block text-md-left ml-md-3"><span class="asterisk">*</span> VIP ticket holders are entitled to VIP express entry, access to VIP area, VIP bar/service/restrooms and a VIP gift.<br>
+													<span class="asterisk">*</span> Do note that VIP privileges will not be available at the Pool Party.</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-2 col-lg-2 text-center d-none d-lg-block">
+											15
+											APRIL 2024
+										</div>
+										<div class="col-xl-1 col-lg-1 text-center d-none d-lg-block">
+											10,300
+										</div>
+										<div class="col-xl-2 col-lg-2 col-md-4 offset-md-0 col-sm-6 offset-sm-5 text-center mt-2 mt-xs-3 mt-sm-3 mt-md-0 mt-lg-1 moveup">
+											<div class="d-inline d-lg-none d-block mb-1">
+												<em>Buy now to save 7,700 THB</em>
+											</div>
+											<div class="quantity buttons_added" style="margin:0 auto;">
+												<input class="minus" type="button" value="-"><input class="input-text qty text" max="" min="0" name="quantity" pattern="" size="4" step="1" title="Qty" type="number" value="0"><input class="plus" type="button" value="+">
+											</div>
+										</div>
+										<p class="remark2 text-center d-none d-sm-block col-sm-12 text-sm-center d-md-none moveup2"><span class="asterisk">*</span>VIP ticket holders are entitled to VIP express entry, access to VIP area,<br>
+										VIP bar/service/restrooms and a VIP gift.<br>
+										<span class="asterisk">*</span> Do note that VIP privileges will not be available at the Pool Party.</p>
+									</div><br>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4">
+									<div class="row">
+										<div class="col-xl-7 col-lg-7 col-md-8">
+											<div class="row">
+												<div class="col-4 offset-4 col-xs-4 offset-xs-4 col-sm-3 offset-sm-1 col-md-3 offset-md-0 pt-md-2 col-lg-3 col-xl-2"><img alt="" class=" img-responsive" src="2024_img/std15s.png" style=" max-width:100%;"></div>
+												<div class="col-12 col-xs-12 col-sm-8 col-md-9 p-md-0 mt-md-0 text-md-left text-center mt-2">
+													<strong class="pl-md-3" style="font-size:1.2em;"><span style="font-weight:800;">STANDARD</span> Medieval Gods</strong>
+													<div class="col-lg-12 d-none d-lg-block mb-1 ml-lg-1" style="margin-left:-0.9em;">
+														<em>Buy now to save 5,700 THB</em>
+													</div>
+													<div class="d-inline d-lg-none p-0">
+														<div class="col-12 col-xs-12 col-md-8 offset-md-0 text-md-left d-inline-block text-center">
+															15 APRIL 2024
+														</div>
+														<div class="col-12 col-xs-12 col-md-4 d-inline-block">
+															<strong>7,900 THB</strong>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-2 col-lg-2 text-center d-none d-lg-block">
+											15
+											APRIL 2024
+										</div>
+										<div class="col-xl-1 col-lg-1 text-center d-none d-lg-block">
+											7,900
+										</div>
+										<div class="col-xl-2 col-lg-2 col-md-4 offset-md-0 col-sm-6 offset-sm-5 text-center mt-2 mt-xs-3 mt-sm-3 mt-md-0 mt-lg-1 moveup">
+											<div class="d-inline d-lg-none d-block mb-1">
+												<em>Buy now to save 5,700 THB</em>
+											</div>
+											<div class="quantity buttons_added" style="margin:0 auto;">
+												<input class="minus" type="button" value="-"><input class="input-text qty text" max="" min="0" name="quantity" pattern="" size="4" step="1" title="Qty" type="number" value="0"><input class="plus" type="button" value="+">
+											</div>
+										</div>
+									</div><br>
+								</td>
+							</tr>
+							
+							
+							
+							<!--end NIGHTS PARTIE --><!--start pool PARTIE -->
 							<tr>
 								<td colspan="4" style="height: 58px;background-image: linear-gradient(to right top, #ffe3f0, #f4e2fe, #dce5ff, #bbebff, #9fefff);">
 									<h5 class="text-center">POOL PARTY ONLY<br>
@@ -381,7 +629,7 @@
 												<input class="minus" type="button" value="-"><input class="input-text qty text" max="" min="0" name="quantity" pattern="" size="4" step="1" title="Qty" type="number" value="0"><input class="plus" type="button" value="+">
 											</div>
 										</div>
-									</div>
+									</div><br>
 								</td>
 							</tr><!-- BOY BOY BOY BOY BOY BOY BOY BOY BOY-->
 							<tr>
@@ -420,35 +668,48 @@
 												<input class="minus" type="button" value="-"><input class="input-text qty text" max="" min="0" name="quantity" pattern="" size="4" step="1" title="Qty" type="number" value="0"><input class="plus" type="button" value="+">
 											</div>
 										</div>
-									</div>
+									</div><br>
 								</td>
 							</tr><!--end Pool PARTIE -->
 						</tbody><!--SUM -->
-						<tfoot>
-							<tr>
-								<td>&nbsp;</td>
-								<td class="text-center">
-									<h5>&nbsp;Total (THB)</h5>
-								</td>
-								<td class="text-center">
-									<h5>&nbsp;99,000</h5>
-								</td>
-								<td>&nbsp;</td>
-							</tr>
-						</tfoot>
+						
 					</table>
 				</div>
-			</div><br>
+			</div>
+              </div>
+             
+      
+					
+              </div>
+              
+              
+            
+          </div>
+
+				
+			<br>
+			<br></div></div>
+
+			
+			<br>
 			<br>
 			<div class="d-md-none" style="height:5em;">
 				&nbsp;
 			</div>
 		</section>
-	<!-- END SINGLE -->		
+	<!-- END COMBO -->	
+	
+
+
+
+	
 		
+		<br>
+		<br>
 		
+	
 		<!-- Footer Classic-->
-		<div class="section context-dark p-3" style="position:fixed; bottom:0px;width: 100%; background: #15162b;text-align: center;color: #b2b2c5;">
+		<div id="footer" class="section context-dark p-3" style="position:fixed; bottom:0px;width: 100%; background: #15162b;text-align: center;color: #b2b2c5;">
 			<div class="container">
 				<div class="row">
 					<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 col-12 pt-2 pt-xs-3" style="vertical-align:middle; left: 0px; top: 0px;">
@@ -465,31 +726,6 @@
 	</script> 
 	<script src="js/script.js">
 	</script>
-	<script>
-      function stickytothetop() {
-        var windowTop = $(window)
-          .scrollTop();
-        var top = $('#stickyHere')
-          .offset()
-          .top;
-        if(windowTop > top) {
-          $('#stickyThis')
-            .addClass('sticky');
-          $('#stickyHere')
-            .height($('#stickyThis')
-              .outerHeight());
-        } else {
-          $('#stickyThis')
-            .removeClass('sticky');
-          $('#stickyHere')
-            .height(0);
-        }
-      }
-      $(function() {
-        $(window)
-          .scroll(stickytothetop);
-        stickytothetop();
-      });
-    </script>
+	
 </body>
 </html>

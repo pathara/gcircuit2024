@@ -1050,5 +1050,94 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endCo
 .w-30{ width:30%!important;}
 .w-80{ width:80%!important;}
 
-button.bin{ border:0px; width:25px; height:25px; background-image:url('../2024_img/bin.jpg'); background-repeat:no-repeat; background-position:center top;}
-								       
+button.bin{ border:0px; width:25px; height:25px; background-image:url('../2024_img/bin.jpg'); background-repeat:no-repeat; background-position:center top; background-color:transparent;}
+
+#header { height:auto;margin:0 auto!important; }
+#sticky {
+    
+   
+    height: auto;
+     
+     
+}
+
+@media only screen and (max-width: 480px) and (min-width: 120px){
+					#sticky.fixedtop {
+	max-width:480px!important; 
+}
+					#sticky.fixedtop ul{
+	 width:480px!important;
+}
+						#sticky.fixedtop ul li{
+	 	 margin-left:0px; margin-right:0px;			 
+}
+
+}
+@media only screen and (max-width: 576px) and (min-width: 481px){
+											#sticky.fixedtop {
+	max-width:450px!important; width:450px!important;
+}
+					#sticky.fixedtop ul{
+	 width:450px!important; margin-left:0px!important; margin-right:0px!important;	  padding-left:0px!important; padding-right:0px!important;	
+}						#sticky.fixedtop ul li{
+	 	 margin-left:0px!important; margin-right:0px!important;			 
+}
+
+
+	
+}
+@media only screen and (max-width: 767px) and (min-width: 577px){
+				#sticky.fixedtop {
+	width:100%; max-width:512px;
+}
+					#sticky.fixedtop ul{
+	 width:450px!important;
+}
+
+	
+}
+@media only screen and (max-width: 991px) and (min-width: 768px){
+		
+				#sticky.fixedtop {
+	width:100%; max-width:698px; 
+}
+		#sticky.fixedtop ul{
+	 width:500px!important;margin-left:0px!important; margin-right:0px!important;	  padding-left:0px!important; padding-right:0px!important;	
+}
+
+
+}
+@media only screen and (max-width: 1199px) and (min-width: 992px){
+			#sticky.fixedtop {
+	width:100%; max-width:910px;
+}	#sticky.fixedtop ul{
+	 width:930px!important;
+}
+
+
+	
+}
+@media screen and (min-width: 1200px){
+	#sticky.fixedtop {
+	width:100%; max-width:1200px;
+}	#sticky.fixedtop ul{
+	 width:950px!important;
+}
+}
+
+
+#sticky.fixedtop {
+    display:block;
+    z-index:999;
+    position: fixed;
+    top: 0; margin:0 auto!important;
+    
+   
+}#section { }
+#footer { }		
+
+li.nav-item{
+	box-shadow: 10px 10px 17px 4px rgba(0,0,0,0.31);
+-webkit-box-shadow: 10px 10px 17px 4px rgba(0,0,0,0.31);
+-moz-box-shadow: 10px 10px 17px 4px rgba(0,0,0,0.31);
+}	       

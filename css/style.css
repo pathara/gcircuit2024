@@ -9321,7 +9321,7 @@ button.swiper-pagination-bullet {
 	position: relative;
 	padding: 0px;
 	background-color:/*#f4f2ee*/ transparent;
-	border:0.5em /*  #f4f2ee*/ #199dfc solid;
+	/*border:0.5em   #f4f2ee #199dfc solid;*/
 }
 
 .tab-content2 {
@@ -9333,7 +9333,7 @@ button.swiper-pagination-bullet {
 
 
 .tab-pane {
-	padding: 0 15px;
+	padding: 0 0px;
 	background-color: #ffffff;
 }
 
@@ -9419,25 +9419,25 @@ button.swiper-pagination-bullet {
 
 @media (min-width: 480px) {
 	.tab-pane.active {
-		padding-left: 30px;
-		padding-right: 30px;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 	.tab-content {
-		padding: 10px; margin:0px;
+		/*padding: 10px;*/ margin:0px;
 	}
 
 }
 
 @media (min-width: 768px) {
 	.tab-content {
-		padding: 20px;
+		/*padding:*/ 20px;
 	}
 }
 
 @media (min-width: 992px) {
 	.tab-pane.active {
-		padding-left: 60px;
-		padding-right: 60px;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 	* + .tabs-custom {
 		margin-top: 45px;
